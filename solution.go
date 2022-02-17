@@ -10,10 +10,11 @@ import "math"
 // CalcSquare(10.0, SidesSquare)
 // CalcSquare(10.0, SidesCircle)
 
+const SidesTriangle = 3
+const SidesSquare = 4
+const SidesCircle = 0
+
 func CalcSquare(sideLen float64, sidesNum int) float64 {
-	const SidesTriangle = 3
-	const SidesSquare = 4
-	const SidesCircle = 0
 	switch sidesNum {
 	case SidesCircle:
 		return math.Pi * math.Pow(sideLen, 2)
